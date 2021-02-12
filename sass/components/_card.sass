@@ -51,10 +51,10 @@ $card-gradient-3: linear-gradient(to right bottom, $color-tertiary-light, $color
             background-image: $card-gradient-1, url(../img/nat-5.jpg)
 
         &--2
-            background-image: $card-gradient-2, url(../img/nat-5.jpg)
+            background-image: $card-gradient-2, url(../img/nat-6.jpg)
 
         &--3
-            background-image: $card-gradient-3, url(../img/nat-5.jpg)
+            background-image: $card-gradient-3, url(../img/nat-7.jpg)
 
     &__heading
         font-size: 2.8rem
@@ -93,3 +93,24 @@ $card-gradient-3: linear-gradient(to right bottom, $color-tertiary-light, $color
 
                 &:not(:last-child)
                     border-bottom: 1px solid $color-grey-light-2
+
+    // BACK SIDE STYLING
+    &__cta
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 90%
+        text-align: center
+
+    &__price-box
+        color: $color-white
+        margin-bottom: 8rem
+
+    &__price-title
+        font-size: 1.4rem
+        text-transform: uppercase
+
+    &__price-value
+        font-size: 6rem
+        font-weight: 100
