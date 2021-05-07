@@ -9,3 +9,35 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+
+// MEDIA QUERY MANAGER
+
+// 0 - 600px:          Phone
+// 600px - 900px:      Tablet portrait
+// 900px - 1200px:     Tablet landscape
+// 1200px - 1800px:    is our normal styles
+// 1800px + :          Big desktop
+
+// $breakpoint argument choices
+// - phone
+// - tab-port
+// - tab-land
+// - big-desktop
+// 1em = 16px
+
+@mixin respond($breakpoint)
+    @if $breakpoint == pnone
+        @media screen and ( max-width: 37.5em )
+            @content
+
+    @if $breakpoint == tab-port
+        @media screen and ( max-width: 56.25em )
+            @content
+
+    @if $breakpoint == tab-land
+        @media screen and ( max-width: 75em )
+            @content
+
+    @if $breakpoint == big-desktop
+        @media screen and ( min-width: 112.5em )
+            @content
