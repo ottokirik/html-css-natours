@@ -4,6 +4,9 @@
     font-size: 1.4rem
     color: $color-grey-light-1
 
+    @include respond(tab-port)
+        padding: 8rem 0
+
     &__logo-box
         text-align: center
         margin-bottom: 8rem
@@ -16,6 +19,10 @@
         border-top: 1px solid rgba($color-grey-light-1, .2)
         padding-top: 2rem
         display: inline-block
+
+        @include respond(tab-port)
+            width: 100%
+            text-align: center
 
     &__list
         list-style: none
@@ -47,3 +54,8 @@
         display: inline-block
         float: right
         width: 85%
+
+        @include respond(tab-port)
+            width: 100%
+            text-align: center
+            float: none
